@@ -1,0 +1,68 @@
+.Formulario{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.div-input{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    align-items: end;
+   
+}
+
+.div-input input,select{
+    width: 450px;
+    height: 30px;
+
+    background-color: rgba(240, 248, 255, 0);
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.534);
+}
+
+.div-input label{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.div-input button{
+    background-color: rgb(189, 17, 17);
+    color: white;
+    width: 30px;
+    height: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 0;
+    text-align: center;
+    transition: .3s;
+}
+
+.div-input button:hover{
+    background-color: rgb(70, 6, 6);
+    color: red;
+}
+
+.salvar{
+    width: 100%;
+    margin-top: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    font-weight: 600;
+    height: 30px;
+    color: rgba(0, 0, 0, 0.664);
+    background-color: rgba(240, 248, 255, 0);
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.salvar:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(23, 187, 17);
+    transition: .3s;
+    border: 1px solid black
+}

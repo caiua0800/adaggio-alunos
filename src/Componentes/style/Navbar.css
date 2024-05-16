@@ -1,0 +1,60 @@
+.Navbar {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(101, 217, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.61);
+}
+
+.btn-dropdown{
+    width: 200px;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-dropdown img{
+    width: 100%;
+}
+
+.nav-link {
+    transition: .3s;
+    text-decoration: none;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-link:hover {
+    transition: .3s;
+    color: rgb(0, 19, 19);
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.dropdown-content {
+    position: absolute;
+    top: calc(100%); /* Ajuste a distância do topo conforme necessário */
+    left: 0;
+    background-color: rgba(101, 217, 252, 1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dropdown-content a {
+    color: rgb(161, 7, 7);
+    padding: 10px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

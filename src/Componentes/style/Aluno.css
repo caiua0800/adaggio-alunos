@@ -1,0 +1,28 @@
+.Aluno{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    margin-right: 10px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    background-color: white;
+    margin-top: 2px;
+    transition: .3s;
+    color: black;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Aluno:hover{
+    background-color: rgb(101, 217, 252);
+    transform: scale(1.02);
+    transition: .3s;
+}
+
+.Aluno h2{
+    font-size: 22px;
+}
+
+.Aluno h6{
+    font-size: 16px;
+}
