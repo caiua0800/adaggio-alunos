@@ -104,6 +104,10 @@ export default function Alunos() {
                             <h2>Curso: </h2>
                             <input id='curso' type='text' placeholder='Curso' value={Array.isArray(alunoAtual.curso) ? alunoAtual.curso.join(', ') : alunoAtual.curso} onChange={handleInputChange} />
                         </div>
+                        <div className='input-div'>
+                            <h2>DOC: </h2>
+                            <a target='blank' className='docA' href={alunoAtual.docgoogle}>Google Docs</a>
+                        </div>
                     </div>
                 )}
                 <button className='save' onClick={handleSaveChanges}>SALVAR</button>

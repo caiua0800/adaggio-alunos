@@ -64,3 +64,9 @@
     color: black;
     transition: .3s;
 }
+
+.docA{
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}

@@ -21,6 +21,7 @@ function Formulario() {
     const [nome, setNome] = useState('');
     const [cpf, setCpf] = useState('');
     const [contato, setContato] = useState('');
+    const [DOCGOOGLE, setDOCGOOGLE] = useState('');
     const [cursos, setCursos] = useState([{ id: 1, nome: "Selecione" }]);
 
     const adicionarCurso = () => {
@@ -43,7 +44,8 @@ function Formulario() {
             nome: nome,
             cpf: cpf,
             contato: contato,
-            curso: cursosArray.map(curso => curso.nome)
+            curso: cursosArray.map(curso => curso.nome),
+            docgoogle: DOCGOOGLE
         };
 
         try {
@@ -71,6 +73,10 @@ function Formulario() {
             <div className="div-input">
                 <label>Contato:</label>
                 <input type="text" value={contato} onChange={(e) => setContato(e.target.value)} />
+            </div>
+            <div className="div-input">
+                <label>DOC:</label>
+                <input type="text" value={DOCGOOGLE} onChange={(e) => setDOCGOOGLE(e.target.value)} />
             </div>
 
             {Array.isArray(cursos) && cursos.map((curso) => (
